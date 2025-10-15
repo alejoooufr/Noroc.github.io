@@ -20,7 +20,7 @@
       <link rel="stylesheet" href="css/responsive.css">
             <!-- fevicon -->
       <link rel="icon" href="images/Logo pw.png" type="image/gif" />
-      <!-- loader -->
+    <!-- loader -->
 <link rel="stylesheet" href="css/loader.css">
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -32,7 +32,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout in_page">
+   <body class="main-layout">
 <!-- Loader -->
 <div class="loader_bg">
   <div class="loader">
@@ -41,7 +41,6 @@
   </div>
 </div>
 
-      <!-- end loader -->
       <!-- header -->
       <header>
          <!-- header inner -->
@@ -52,7 +51,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/Noroc.png" width="180" height="100" alt="#" /></a>
+                              <a href="index.html"><img src="images/Noroc.png" width="200" height="100" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -65,7 +64,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="Inicio.html">Principal</a>
                               </li>
                               <li class="nav-item">
@@ -77,14 +76,14 @@
                                <li class="nav-item">
                                  <a class="nav-link" href="Catalogo.html">Catalogo</a>
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="Asesoria.html">Asesoria</a>
                               </li>
                               <li class="nav-item">
                               <a class="nav-link" href="carrito.html">👜</a>
                                 <span class="cart-count">0</span>
                                   <div class="cart-resumen"></div>
-                              </li> 
+                              </li>   
                            </ul>
                         </div>
                      </nav>
@@ -94,40 +93,102 @@
          </div>
       </header>
       <!-- end header inner -->
-
       <!-- end header -->
-<!-- Contact Section -->
-<section class="contact">
+<!-- banner -->
+<section class="banner_main">
+   <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+      <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <div class="container">
+               <div class="carousel-caption relative">
+                  <div class="row">
+                     <div class="col-md-7 offset-md-5">
+                        <div class="text-bg">
+                           <h1>Bienvenido <br>a NoroC</h1>
+                           <a class="read_more" href="Catalogo.html">Explorar fragancias</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <div class="container">
+               <div class="carousel-caption relative">
+                  <div class="row">
+                     <div class="col-md-7 offset-md-5">
+                        <div class="text-bg">
+                           <h1>Los mejores <br>en...</h1>
+                           <a class="read_more" href="Catalogo.html">Explorar fragancias</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <div class="container">
+               <div class="carousel-caption relative">
+                  <div class="row">
+                     <div class="col-md-7 offset-md-5">
+                        <div class="text-bg">
+                           <h1>perfumeria <br>y fragancias</h1>
+                           <a class="read_more" href="Catalogo.html">Explorar fragancias</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+         <i class="fa fa-angle-left" aria-hidden="true"></i>
+         <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+         <i class="fa fa-angle-right" aria-hidden="true"></i>
+         <span class="sr-only">Next</span>
+      </a>
+   </div>
+</section>
+<!-- end banner -->
+<!-- about -->
+<div id="about" class="about">
   <div class="container">
-    <div class="titlepage">
-      <h2>Contáctanos</h2>
-      <p class="contact-intro">Tu aroma ideal está a un mensaje de distancia.</p>
-    </div>
-
     <div class="row">
-      <!-- Formulario -->
-      <div class="col-md-6">
-        <form id="request" class="main_form">
-          <input class="contactus" type="text" name="Name" placeholder="Nombre" required>
-          <input class="contactus" type="email" name="Email" placeholder="Correo electrónico" required>
-          <textarea class="textarea" name="Message" placeholder="Mensaje" required></textarea>
-          <a id="whatsappBtn" class="send_btn" href="#" target="_blank">Enviar por WhatsApp</a>
-        </form>
+      <!-- Texto alineado a la izquierda y centrado verticalmente -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="titlepage">
+          <h2>Sobre <span class="green">Nosotros</span></h2>
+          <p>
+            NoroC Perfumería es una tienda de perfumes ubicada en Sogamoso, Boyacá, Colombia.
+            Se especializa en ofrecer una variedad de fragancias y productos relacionados con la perfumería.
+          </p>
+          <a class="read_more" href="Nosotros.html">Leer Más</a>
+        </div>
       </div>
 
-      <!-- Mapa -->
+      <!-- Imagen a la derecha -->
       <div class="col-md-6">
-        <div class="map_main">
-          <p class="map-label">Encuéntranos en el corazón de Sogamoso</p>
-          <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63518.77774251227!2d-72.99475517832029!3d5.7241436000000085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4674d19b67a1%3A0x926467393ae7035c!2sNOROC%20PERFUMERIA!5e0!3m2!1ses!2sco!4v1750271893295!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div class="about_img">
+          <figure>
+            <img src="images/Cardozo.png" alt="Imagen NoroC" />
+          </figure>
         </div>
       </div>
     </div>
   </div>
-</section>
-      <!-- end contact -->
+</div>
+<!-- end about -->
+
+
+      <!--  service -->
+      
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -203,7 +264,7 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="js/carrito.js" defer></script>
+      <script src="js/carrito.js" defer></script>
 <script>
   $(window).on("load", function () {
     $(".loader_bg").css({
@@ -215,35 +276,6 @@
     }, 800);
   });
 </script>
-
-<script>
-  document.getElementById("whatsappBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    // Captura los valores del formulario
-    const name = document.querySelector('input[name="Name"]').value.trim();
-    const email = document.querySelector('input[name="Email"]').value.trim();
-    const message = document.querySelector('textarea[name="Message"]').value.trim();
-
-    // Validación rápida
-    if (!name || !email || !message) {
-      alert("Por favor completa todos los campos antes de enviar.");
-      return;
-    }
-
-    // Construye el mensaje para WhatsApp
-    const text = `Hola, soy *${name}*.\nMi correo es: *${email}*.\n\nMensaje:\n${message}`;
-    const encodedText = encodeURIComponent(text);
-
-    // Número de WhatsApp de la empresa
-    const phoneNumber = "573026010600"; 
-
-    // Redirige a WhatsApp con el mensaje
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
-    window.open(whatsappURL, "_blank");
-  });
-</script>
-
 
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
