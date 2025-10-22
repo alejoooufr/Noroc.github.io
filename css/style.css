@@ -1790,6 +1790,34 @@ body, html {
   transform: translateY(0);
 }
 
+/* --- CORRECCIÓN DE MENÚ RESPONSIVE --- */
+
+/* Quitar forzado del nav en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navigation.navbar {
+    display: block !important;
+    text-align: center;
+  }
+
+  .navigation .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation .nav-link {
+    margin: 10px 0 !important;
+  }
+}
+
+/* Mejorar visibilidad del botón hamburguesa */
+.navbar-dark .navbar-toggler {
+  border-color: #009D71;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009D71' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /** FOOTER GENERAL **/
 .footer {
   background: linear-gradient(to bottom, #202020, #151515);
@@ -2014,4 +2042,5 @@ ul.link_menu li a:hover {
 
 .in_page .header {
      border-bottom: #009D71 solid 2px;
+
 }
